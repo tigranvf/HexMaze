@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+    <b>Maze</b>
+    <details name="money_rain">
+        <summary>Money Rain</summary>
+        <article>
+            <pre><code>Money Rain is a minigame where you should visit the most cells you can in a short period of time</code></pre>
+            <a href="{% url 'maze' %}?mode=money_rain&theme=light"><button>Play</button></a>
+        </article>
+    </details>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    user-select: none; /* Prevent text selection */
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.floating-number {
+    position: absolute;
+    font-size: 36px;
+    font-family: Roboto Condensed,sans-serif;
+    transform: translate(-50%, -000%); /* Center horizontally and align bottom */
+    animation: float 1.5s ease-out;
+}
+
+@keyframes float {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -75%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -75%) translateY(-750%);
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "player_fill_color": "BlueViolet",
+  "player_stroke_width": 0,
+  "player_stroke_color": "black",
+  "wall_width": 2,
+  "wall_color": "black",
+  "tile_bg_color": "Beige",
+  "bg_color": "gray",
+  "bg_img": "https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg",
+  "bg_img_mode": "fit",
+  "money_rain_color": "gold",
+  "money_rain_mode_info_color": "yellow",
+  "popup_color": "LemonChiffon",
+  "popup_shadow_color": "black",
+  "timer_bg_color": "black",
+  "timer_color": "lime",
+  "game_over_popup_color": "white",
+  "game_over_popup_shadow_color": "black"
+}

@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maze</title>
+  <link rel="stylesheet" href="{% static 'maze/css/main.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'maze/img/logo.png' %}">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div id="fps">FPS: 0</div>
+  {% if mode == 'money_rain' %}
+  <div id="num"></div>
+  <div id="timer">
+    <span id="a">00:00</span><span id="b">.00</span>
+  </div>
+  <div hidden id="endGame">
+    <p id="gameOver">Game Over!!!</p>
+    <p id="score">23</p>
+  </div>
+  {% endif %}
+  <script>var mode = "{{ mode }}"; var theme_name = "{{ theme }}"; if (!theme_name) {theme_name = "light"}; const theme_folder = "{% static 'maze/theme' %}"</script>
+  <script src="{% static 'maze/js/main.js' %}"></script>
+</body>
+</html>
